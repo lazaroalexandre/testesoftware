@@ -1,4 +1,4 @@
-package com.br.homolazarusapps.testesoftware.domain;
+package com.br.homolazarusapps.testesoftware.modules.user.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -18,12 +18,12 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class User {
+public class UserModel {
 
     @Id
     @EqualsAndHashCode.Include
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
     private String name;
 
